@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+body {
+    font-family: 'Noto Sans JP', "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+}
+
+th, td {
+    border: solid 1px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+h1 {
+    margin-left: 15px;
+    font-size: 1.7em;
+}
+
+.header {
+    background-color: #2e8b57;
+    height: 50px;
+}
+
+.header>a {
+    text-decoration: none;
+    color: #fff;
+    display: flex;
+    height: 100%;
+}
+
+.header-img {
+    margin-left: 10px;
+    display: block;
+}
+
+.header-title {
+    font-size: 2em;
+    margin-left: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.buki {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.buki-item {
+    display: block;
+    margin: 10px;
+    height: 4em;
+    width: 16em;
+}
+
+.buki-item>a {
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    background-color: #3cb371;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    border-radius: 10px;
+}
+
+.buki-item>a:hover {
+    background-color: #2e8b57;
+}
+
+.buki-image {
+    height: 200px;
+    margin: 20px;
+}
+
+.table {
+    margin: 20px;
+}
+
+/* .table-row {} */
+
+.table-header {
+    background-color: #3cb371;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* .table-content {} */

@@ -9,3 +9,4 @@ target
 /.vscode
 /.metals
 /RUNNING_PID
+.bloop

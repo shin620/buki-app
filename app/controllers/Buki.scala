@@ -10,13 +10,14 @@ class Csv(filePath: String, coding: String = "utf-8") {
   }
 }
 
-class BukiCsv(filePath: String = "app/controllers/buki.csv")
+class BukiFormatCsv(filePath: String = "app/controllers/buki.csv")
     extends Csv(filePath, "utf-8") {
   def getRow(id: String): Array[String] = readAll.filter(_(0) == id)(0)
+  def names: Array[String] = readAll.map(_(1))
 }
 
 class Buki(id: String) {
-  private val bukiCsv = new BukiCsv()
+  private val bukiCsv = new BukiFormatCsv()
   private val bukiData = bukiCsv.getRow(id)
 
   def name: String = bukiData(1)

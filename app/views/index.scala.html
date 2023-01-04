@@ -1,6 +1,12 @@
-@()
+@(bukis: Array[Array[String]])
 
-@main("Welcome to Play") {
-  <h1>Welcome to Play!</h1>
-  <a href="http://localhost:9000/1">わかばシューター</a>
+@main("ブキ一覧") {
+  <h1>ブキ一覧</h1>
+  <ul class="buki">
+  @for(buki <- bukis){
+    <li class="buki-item">
+      <a href="http://localhost:9000/@buki(0)">@buki(1)</a>
+    </li>
+  }
+  </ul>
 }
